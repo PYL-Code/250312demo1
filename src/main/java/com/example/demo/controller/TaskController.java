@@ -22,7 +22,7 @@ public class TaskController {
 
     @GetMapping("/new")
     public String showCreateForm(Model model) {
-        model.addAttribute("task", new Task());
+        model.addAttribute("task", new Task()); // 빈 Task 객체를 모델에 저장 (폼 초기값 설정)
         return "task/form";
     }
 

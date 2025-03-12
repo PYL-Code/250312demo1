@@ -8,6 +8,10 @@ public class Task {
     private String status;
     private String dueDate;
 
+    //생성자가 명시적으로 정의되어 있지 않아,
+    //Controller 등에서 new Task 를 호출하면 기본 생성자가 자동으로 적용
+    //모든 필드는 null, 또는 초기값으로 설정됨
+
     public String getDueDate() {
         return dueDate;
     }
